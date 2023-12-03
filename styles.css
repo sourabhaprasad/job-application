@@ -1,0 +1,97 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(98, 97, 97);
+    background-blend-mode: multiply;
+    background-image: url(https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+}
+
+h1,p{
+    text-align: center;
+    margin: 1rem auto;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    background-color: rgba(45, 44, 44, 0.8);
+    border-radius: 15px;
+    margin: 20px;
+    padding: 25px;
+    width: 55%;
+}
+
+label{
+    display: block;
+    margin: 10px;
+}
+
+fieldset{
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 10px;
+}
+
+fieldset:last-child{
+    border: none;
+}
+
+input, textarea, select{
+    min-height: 1.5rem;
+    color: black;
+    width: 100%;
+    margin: 10px 0 0 0;
+    border: none;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.4rem;
+    vertical-align: middle
+}
+
+
+textarea{
+    display: block;
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+    border: grey;
+    margin: 2em auto;
+    border-radius: 3px;
+}
+
+
+.new-line{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 2px;
+}
+
+input[type='submit']{
+    display: block;
+    max-width: 150px;
+    max-height: 50px;
+    border: 0.5px solid white;
+    border-radius: 4px;
+    width: 60%;
+    margin: 4px auto 3px auto;
+}
+
+#submit:hover{
+    background-color: grey;
+}

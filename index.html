@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Job Application</title>
+    <meta name='description' content='A certification project developed.'>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <h1 id='title'>Job Application</h1>
+    <p id='description'>Thank you for your time.</p>
+    <section>
+        <div class="main">
+            <form id='survey-form'>
+                <fieldset>
+                    <label for='name' id='name-label'>Name 
+                        <input type='text' id='name' placeholder='Enter your name' required>
+                      </label>
+                
+                      <label for='email' id='email-label'>Email 
+                        <input type='email' id='email' placeholder='Enter your email' required>
+                      </label>
+                
+                      <label for='age' id='number-label' >Age (optional) 
+                        <input type='number' id='number' placeholder='Enter your age' required min=12 max=100>
+                      </label>
+                </fieldset>
+                
+                <fieldset>
+                    <label for='current-role'>Which option best describes your current role?
+                        <select id='dropdown' required>
+                          <option>(select one)</option>
+                          <option>Student</option>
+                          <option>Full-Time Job</option>
+                          <option>Full-Time Learner</option>
+                          <option>Other</option>
+                        </select>
+                    </label>
+                    
+                    <div class="new-line">
+                        <label id='work-schedule'>What work schedule would you prefer?
+                            <div class="new-line">
+                                <input type='radio' id='full-time' value='full-time' name='work-schedule' class="inline" checked>Full-Time
+                            </div>
+                            <div class="new-line">
+                                <input type='radio' id='part-time' value='part-time' name='work-schedule' class="inline">Part-Time                            
+                            </div>
+                            <div class="new-line">
+                                <input type='radio' id='flexible' value='flexible' name='work-schedule' class="inline">Flexible
+                            </div>                        
+                        </label>
+                    
+                        <label id='work-place'>Where would you be convenient working from?
+                            <div class="new-line">
+                                <input type='radio' id='office' name='work-place' value='office' class="inline" checked>Office
+                            </div>
+                            <div class="new-line">
+                                <input type='radio' id='office' name='work-place' value='wfh' class="inline">Work From Home
+                            </div>                                
+                            <div class="new-line">
+                                <input type='radio' id='flexible-place' name='work-place' value='flexible' class="inline">Flexible
+                            </div>
+                        </label>
+                    
+                        <label>What role are you looking forward?
+                            <div class="new-line" required>
+                                <input type='checkbox' id='full-stack' value='full-stack' class="inline">Full-Stack Developer
+                            </div>
+                            <div class="new-line">
+                                <input type='checkbox' id='front-back' value='front-back' class="inline">Front-End Developer
+                            </div>
+                            <div class="new-line">
+                                <input type='checkbox' id='back' value='back' class="inline">Back-End Developer
+                            </div>
+                            <div class="new-line">
+                                <input type='checkbox' id='devops' value='devops' class="inline">Devops                                
+                            </div>
+                            <div class="new-line">
+                                <input type='checkbox' id='ds' value='ds' class="inline">Data Scientist
+                            </div>
+                            <div class="new-line">
+                                <input type='checkbox' id='da' value='da' class="inline">Data Analyst
+                            </div>      
+                            <div class="new-line"> 
+                                <input type='checkbox' id='other-role' value='other' class="inline">Other
+                            </div>                                                                            </label>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <label for='add-info'><p>Give us some additional information if deemed fit. </p>
+                        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter here..."></textarea>
+                    </label>
+                    <input type='submit' id='submit'>       
+                </fieldset>
+              </form>
+        </div>
+    </section>
+  </body>
+</html>
